@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch — Job Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/skill-icon.png" alt="Skill Icon" class="skill-icon">
+        <h1>SkillMatch — Job Finder</h1>
+        <p>Enter your skills and find the best matching jobs instantly!</p>
+
+        <select id="skillSelect">
+            <option value="">-- Choose a skill --</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>MongoDB</option>
+            <option>SQL</option>
+            <option>Angular</option>
+            <option>Django</option>
+            <option>Ruby</option>
+            <option>Other</option>
+        </select>
+
+        <div id="customSkill" style="display:none;">
+            <input type="text" id="otherSkillInput" placeholder="Enter your skill">
+        </div>
+
+        <button onclick="findJobs()">Find Jobs</button>
+        <div id="jobResults"></div>
+
+        <p class="footer">Made by — Krishna</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
